@@ -55,8 +55,8 @@ curl http://localhost:3000/api/events/1/registrations -H "x-admin-key: change-me
 ## Project layout
 
 ```
-app/page.js          events page with the register form
-app/api/events/...   the API routes
+app/page.js          events page
+app/api/events/...   API routes
 lib/db.js            SQLite setup and seed data
 lib/events.js        registration rules
 tests/               automated tests
