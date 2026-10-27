@@ -24,7 +24,7 @@ The database file (`cpd.db`) is created automatically on first run and filled wi
 npm test
 ```
 
-The tests use an in-memory database, so they don't touch your local data. They cover a successful registration, missing name, invalid email, duplicate email, a full event and an unknown event.
+They cover a successful registration, missing name, invalid email, duplicate email, a full event and an unknown event.
 
 ## API
 
@@ -48,7 +48,7 @@ Emails are compared without case, so `Sara@x.com` and `sara@x.com` count as the 
 
 ### `GET /api/events/:id/registrations`
 
-Admin only. Send the `x-admin-key` header matching `ADMIN_KEY` from env, otherwise we will get a 401.
+Admin only. Send the `x-admin-key` header matching `ADMIN_KEY` from the env, otherwise we will get a 401.
 
 ```bash
 curl http://localhost:3000/api/events/1/registrations -H "x-admin-key: secret123"
