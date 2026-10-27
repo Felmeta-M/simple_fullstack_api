@@ -2,23 +2,21 @@
 
 A small app for ETiCPA's CPD training events. Members can see what's coming up and grab a seat, and admins can check who has registered.
 
-Built with Next.js and SQLite (via `better-sqlite3`).
+Built with Next.js and SQLite.
 
-## Getting started
-
-You need Node.js 20 or newer.
+## To Get started
 
 ```bash
 npm install
-cp .env.example .env.local   # then set your own ADMIN_KEY
+cp .env.example .env.local
 npm run dev
 ```
 
-Open http://localhost:3000 to see the events page.
+http://localhost:3000 to see the events page.
 
-The database file (`cpd.db`) is created automatically on first run and filled with the seed events. Delete it any time to start fresh.
+The database file (`cpd.db`) is created automatically on first run and filled with the seed events.
 
-## Running the tests
+## Run the tests
 
 ```bash
 npm test
@@ -36,13 +34,13 @@ Lists all events, each with a `seatsLeft` field.
 
 Body: `{ "name": "...", "email": "..." }`
 
-| Result | Status |
-| --- | --- |
-| Registered | 201 |
-| Name missing or email not valid | 400 |
-| Event doesn't exist | 404 |
-| Email already registered for this event | 409 |
-| Event is full | 409 |
+| Result                                  | Status |
+| --------------------------------------- | ------ |
+| Registered                              | 201    |
+| Name missing or email not valid         | 400    |
+| Event doesn't exist                     | 404    |
+| Email already registered for this event | 409    |
+| Event is full                           | 409    |
 
 Emails are compared without case, so `Sara@x.com` and `sara@x.com` count as the same person.
 
