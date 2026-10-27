@@ -46,10 +46,10 @@ Emails are compared without case, so `Sara@x.com` and `sara@x.com` count as the 
 
 ### `GET /api/events/:id/registrations`
 
-Admin only. Send the `x-admin-key` header matching `ADMIN_KEY` from your env, otherwise you get a 401.
+Admin only. Send the `x-admin-key` header matching `ADMIN_KEY` from env, otherwise we will get a 401.
 
 ```bash
-curl http://localhost:3000/api/events/1/registrations -H "x-admin-key: change-me"
+curl http://localhost:3000/api/events/1/registrations -H "x-admin-key: secret123"
 ```
 
 ## Project layout
