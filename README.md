@@ -1,8 +1,10 @@
+# Code : 03
+
 # ETiCPA CPD Events
 
 A small app for ETiCPA's CPD training events. Members can see what's coming up and grab a seat, and admins can check who has registered.
 
-Built with Next.js and SQLite.
+Next.js and SQLite.
 
 ## To Get started
 
